@@ -1,0 +1,53 @@
+.box {
+	margin-bottom: 1.5em;
+	padding: 0.65em;
+	margin: 1em;
+	background: #ecf2f5;
+	border: 1px solid #bcd;
+	text-align: left;
+}
+
+h2 {
+	font-size: 1.3em;
+	margin-bottom: 0.5em;
+	border-bottom: 1px solid #888;
+	font-style: italic;
+}
+
+label {
+	display: block;
+	color: #414242;
+	font-size: 0.85em;
+}
+
+.filter_div {
+	margin-right: 1.65em;
+	font-size: 0.85em;
+	width: 100%;
+}
+
+#id_arch {
+	font-size: 0.85em;
+	width: 100%;
+}
+
+#id_repo {
+	font-size: 0.85em;
+	width: 100%;
+}
+
+#id_q {
+	font-size: 0.85em;
+}
+
+#main {
+	font-size: 0.85em;
+}
+
+#flagged {
+	font-size: 0.85em;
+}
+
+#sub {
+	font-size: 0.85em;
+}
