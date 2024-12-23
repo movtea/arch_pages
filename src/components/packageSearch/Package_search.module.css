@@ -1,7 +1,6 @@
 .box {
-	margin-bottom: 1.5em;
+	margin: 1.5em 0em;
 	padding: 0.65em;
-	margin: 1em;
 	background: #ecf2f5;
 	border: 1px solid #bcd;
 	text-align: left;
@@ -11,7 +10,8 @@ h2 {
 	font-size: 1.3em;
 	margin-bottom: 0.5em;
 	border-bottom: 1px solid #888;
-	font-style: italic;
+	font-style: inherit;
+	font-weight: 700;
 }
 
 label {

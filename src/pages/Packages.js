@@ -1,49 +1,34 @@
 import React from 'react'
 import Package_search from '../components/packageSearch/Package_search'
+import classes from './Packages.module.css'
 
 function Packages() {
 	return (
-		<div className='content'>
+		<div className={classes.content}>
 			<Package_search></Package_search>
-			<div>
-				<p>15133 matching packages found. Page 1 of 152.</p>
-				<div class='pkglist-nav'>
-					<span class='prev'>&lt; Prev</span>
+			<div className={classes.box}>
+				<p>8 matching packages found. Page 1 of 1.</p>
+				<div className={classes.pkglist_nav}>
+					<span className={classes.prev}>&lt; Prev</span>
 					<span class='next'>
-						<a href='?page=2&amp;' title='Go to next page' rel='next'>
-							Next &gt;
-						</a>
+						<a href='#'>Next &gt;</a>
 					</span>
 				</div>
-				<input
-					type='hidden'
-					name='csrfmiddlewaretoken'
-					value='7GAfvRTuD4Kum6Y3Nvnt9tJuKBT3Gxi1D9ja3TEiD6MUnu1KA1wiJpCGHyaHl73j'
-				/>
-				<table class='results'>
+				<table>
 					<thead>
 						<tr>
 							<th>
-								<a
-									href='/packages/?sort=arch'
-									title='Sort packages by architecture'
-								>
+								<a href='#' title='Sort packages by architecture'>
 									Arch
 								</a>
 							</th>
 							<th>
-								<a
-									href='/packages/?sort=repo'
-									title='Sort packages by repository'
-								>
+								<a href='#' title='Sort packages by repository'>
 									Repo
 								</a>
 							</th>
 							<th>
-								<a
-									href='/packages/?sort=pkgname'
-									title='Sort packages by package name'
-								>
+								<a href='#' title='Sort packages by package name'>
 									Name
 								</a>
 							</th>
@@ -72,10 +57,7 @@ function Packages() {
 							<td>x86_64</td>
 							<td>Extra</td>
 							<td>
-								<a
-									href='/packages/extra/x86_64/0ad/'
-									title='View package details for 0ad'
-								>
+								<a href='#' title='View package details for 0ad'>
 									0ad
 								</a>
 							</td>
@@ -94,10 +76,7 @@ function Packages() {
 							<td>any</td>
 							<td>Extra</td>
 							<td>
-								<a
-									href='/packages/extra/any/0ad-data/'
-									title='View package details for 0ad-data'
-								>
+								<a href='#' title='View package details for 0ad-data'>
 									0ad-data
 								</a>
 							</td>
@@ -116,10 +95,7 @@ function Packages() {
 							<td>x86_64</td>
 							<td>Extra</td>
 							<td>
-								<a
-									href='/packages/extra/x86_64/389-ds-base/'
-									title='View package details for 389-ds-base'
-								>
+								<a href='#' title='View package details for 389-ds-base'>
 									389-ds-base
 								</a>
 							</td>
@@ -135,10 +111,75 @@ function Packages() {
 							<td>x86_64</td>
 							<td>Extra</td>
 							<td>
-								<a
-									href='/packages/extra/x86_64/3cpio/'
-									title='View package details for 3cpio'
-								>
+								<a href='#' title='View package details for 3cpio'>
+									3cpio
+								</a>
+							</td>
+
+							<td>0.3.2-1</td>
+
+							<td class='wrap'>
+								Manage Linux kernel initramfs cpio files written in Rust
+							</td>
+							<td>Aug. 20, 2024</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>x86_64</td>
+							<td>Extra</td>
+							<td>
+								<a href='#' title='View package details for 3cpio'>
+									3cpio
+								</a>
+							</td>
+
+							<td>0.3.2-1</td>
+
+							<td class='wrap'>
+								Manage Linux kernel initramfs cpio files written in Rust
+							</td>
+							<td>Aug. 20, 2024</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>x86_64</td>
+							<td>Extra</td>
+							<td>
+								<a href='#' title='View package details for 3cpio'>
+									3cpio
+								</a>
+							</td>
+
+							<td>0.3.2-1</td>
+
+							<td class='wrap'>
+								Manage Linux kernel initramfs cpio files written in Rust
+							</td>
+							<td>Aug. 20, 2024</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>x86_64</td>
+							<td>Extra</td>
+							<td>
+								<a href='#' title='View package details for 3cpio'>
+									3cpio
+								</a>
+							</td>
+
+							<td>0.3.2-1</td>
+
+							<td class='wrap'>
+								Manage Linux kernel initramfs cpio files written in Rust
+							</td>
+							<td>Aug. 20, 2024</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>x86_64</td>
+							<td>Extra</td>
+							<td>
+								<a href='#' title='View package details for 3cpio'>
 									3cpio
 								</a>
 							</td>
