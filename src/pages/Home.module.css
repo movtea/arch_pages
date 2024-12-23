@@ -1,0 +1,39 @@
+.margin_div {
+    margin: 1.5em 0;
+}
+
+.home__container {
+    width: 1602.65px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home__left {
+    width: 1262.65px;
+}
+
+.home__left .dist {
+    text-align: left;
+    margin-bottom: 1.5em;
+    padding: .65em;
+    background: #ecf2f5;
+    border: 1px solid #bcd;
+}
+
+.dist h2 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid #888;
+}
+
+.dist p {
+    margin: .33em 0 1em;
+    font-size: .812em;
+}
+
+.home__right {
+    width: 300px;
+}
+
