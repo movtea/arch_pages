@@ -1,6 +1,11 @@
 import React from 'react';
 import classes from "./Home.module.css";
 
+import  donat from "../../src/img/donat.png";  
+import  hetz from "../../src/img/hetz.png";  
+import  ico from "../../src/img/ico.png";  
+import  shells from "../../src/img/shells.png";  
+
 function Home() {
     return (
         <>
@@ -67,13 +72,67 @@ function Home() {
                     </div>
                 </div>
                 <div className={classes.home__right}>
-                    <div>
-                        <span>Package Search</span>
-                        <input></input>
+                    <div className={classes.search}>
+                        <label className={classes.search__label}>Package Search</label>
+                        <input className={classes.search__input}></input>
                     </div>
+                    <div className={classes.margin_div}></div>
+                    <div className={classes.update}>
+                        <h3><b>Recent Updates </b>(<a href="#">more</a>)</h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    <span>naev 0.12.0-1</span>
+                                </td>
+                                <td>
+                                    <a href="#">x86_64</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>plasma-firewall 6.2.4-2</span>
+                                </td>
+                                <td>
+                                    <a href="#">x86_64</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>hugo 0.140.1-1</span>
+                                </td>
+                                <td>
+                                    <a href="#">x86_64</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div className={classes.margin_div}></div>
+                    <div className={classes.widget}>
+                        <h4>Documentation</h4>
+                        <ul>
+                            <li><a href="#">Wiki</a></li>
+                            <li><a href="#">Manual Pages</a></li>
+                            <li><a href="#">Installation Guide</a></li>
+                        </ul>
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">Mailing Lists</a></li>
+                            <li><a href="#">IRC Channels</a></li>
+                            <li><a href="#">Planet Arch</a></li>
+                            <li><a href="#">International Communities</a></li>
+                        </ul>
+                    </div>
+                    <img className={classes.img} src={donat}></img>
+                    <img className={classes.img} src={hetz}></img>
+                    <img className={classes.img} src={ico}></img>
+                    <img className={classes.img} src={shells}></img>
                 </div>
             </div>
-
+        <footer>
+            <p>Copyright © 2002-2024 <a href="#">Judd Vinet</a>, <a href="#">Aaron Griffin</a> and <a href="#">Levente Polyák</a>.</p> <br></br>
+            <p>The Arch Linux name and logo are recognized <a href="#">trademarks</a>. Some rights reserved.</p> <br></br>
+            <p>The registered trademark Linux® is used pursuant to a sublicense from LMI, the exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.</p>
+        </footer>
         </>
     );
 }

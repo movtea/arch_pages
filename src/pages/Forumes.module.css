@@ -1,0 +1,21 @@
+.reg__cont {
+    background: #f6f9fc;
+    padding: 30px 40px;
+}
+
+.norm {
+    border: 0;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.norm .reg {
+    border: 1px #bcd solid;
+    border-radius: 0;
+}
+
+.regHead {
+    background-color: red;
+}
