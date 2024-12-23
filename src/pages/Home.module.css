@@ -2,6 +2,28 @@
     margin: 1.5em 0;
 }
 
+a {
+    color: #08c;
+}
+
+a:hover, 
+a:focus, 
+a:visited, 
+a:visited:hover {
+    color: #08c;
+    text-decoration: underline;
+}
+
+a:link, 
+a:visited, 
+a:visited {
+    color: #08c;
+}
+
+a {
+    text-decoration: none;
+}
+
 .home__container {
     width: 1602.65px;
     margin: 0 auto;
@@ -10,10 +32,12 @@
     justify-content: space-between;
 }
 
+/* Левая часть */
 .home__left {
     width: 1262.65px;
 }
 
+/* Блок дистрибутива */
 .home__left .dist {
     text-align: left;
     margin-bottom: 1.5em;
@@ -23,7 +47,7 @@
 }
 
 .dist h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: .5em;
     border-bottom: 1px solid #888;
 }
@@ -33,7 +57,130 @@
     font-size: .812em;
 }
 
+.dist .p_more {
+    text-align: right;
+}
+
+.dist a {
+    font-size: .9em;
+}
+
+/* Блок новостей */
+.home__left .news {
+    text-align: left;
+}
+
+.news h3 {
+    display: block;
+    height: 25px;
+    background: #1794D1;
+    font-size: 15px;
+    color: white;
+    float: left;
+    font-size: 1em;
+    margin-top: .5em;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.news h3 a:hover {
+    color: white;
+}
+.news h3 a {
+    display: block;
+    font-size: 15px;
+    padding: 2px 10px;
+    color: white;
+}
+
+.news h3 .arrow {
+    margin-top: 20px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #1794D1;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+}
+
+.news h4 {
+    clear: both;
+    font-size: 1em;
+    margin-top: 1.5em;
+    border-bottom: 1px dotted #bbb;
+    font-size: .812em;
+}
+
+.news p {
+    margin: .33em 0 1em;
+    margin-bottom: .5em;
+    font-size: .812em;
+}
+
+.news  ul {
+    margin-bottom: 1em;
+    padding-left: 2em;
+    font-size: .812em;
+}
+
+.news code {
+    font-family: monospace,monospace;
+    background: #ffd;
+    padding: .15em .25em;
+}
+
+.news pre {
+    font-family: monospace,monospace;
+    border: 1px solid #bdb;
+    background: #dfd;
+    padding: .5em;
+    margin: 1em;
+}
+
+.news pre code {
+    display: block;
+    background: none;
+    overflow: auto;
+    font-family: monospace,monospace;
+    padding: .15em .25em;
+    line-height: 1.4;
+    font-size: .812em;
+}
+
+.news .time {
+    float: right;
+    font-size: .812em;
+    margin: -1.8em .5em 0 0;
+}
+
+.news dl {
+    clear: both;
+}
+
+.news dl dt {
+    padding-top: 10px;
+    color: #333;
+    float: left;
+    padding-right: 15px;
+    font-size: .812em;
+    font-weight: 700;
+}
+
+.news dl dd {
+    margin-bottom: 4px;
+    padding: 8px 0 4px;
+    font-weight: bold;
+    border-top: 1px dotted #bbb;
+    font-weight: 700;
+    font-size: .812em;
+}
+
 .home__right {
     width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 

@@ -46,19 +46,19 @@ header {
     text-decoration: none;
     font-weight: bold;
 }
-.header a:hover,
-.header a:focus,
+.header .header_div a:hover,
+.header .header_div a:focus,
 /* .header a:visited, */
-.header a:visited:hover {
+.header .header_div a:visited:hover {
     text-decoration: underline;
     color: white;
 }
-.header a:hover,
+.header .header_div a:hover,
 /* .header a:visited, */
-.header a:visited:hover {
+.header .header_div a:visited:hover {
     color: white;
 }
-.header a:active {
+.header .header_div a:active {
     color: white;
     }
 
