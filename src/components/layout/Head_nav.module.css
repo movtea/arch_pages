@@ -53,6 +53,9 @@ header {
     text-decoration: underline;
     color: white;
 }
+
+
+
 .header .header_div a:hover,
 /* .header a:visited, */
 .header .header_div a:visited:hover {
