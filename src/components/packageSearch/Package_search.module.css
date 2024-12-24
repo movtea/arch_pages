@@ -26,28 +26,7 @@ label {
 	width: 100%;
 }
 
-#id_arch {
+.filter_section {
 	font-size: 0.85em;
 	width: 100%;
-}
-
-#id_repo {
-	font-size: 0.85em;
-	width: 100%;
-}
-
-#id_q {
-	font-size: 0.85em;
-}
-
-#main {
-	font-size: 0.85em;
-}
-
-#flagged {
-	font-size: 0.85em;
-}
-
-#sub {
-	font-size: 0.85em;
 }
