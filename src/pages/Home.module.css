@@ -67,8 +67,8 @@ a:visited:hover {
 	font-size: 0.812em;
 }
 
-.dist .p_more {
-	text-align: right;
+.home__left .dist .p_more {
+	padding-left: 90%;
 }
 
 .dist a {

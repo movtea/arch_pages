@@ -37,7 +37,7 @@ function Home() {
 									our wiki if you want to learn more about Arch.
 								</p>
 								<p className={classes.p_more}>
-									<a>Learn more...</a>
+									<a href="#">Learn more...</a>
 								</p>
 							</div>
 							<div className={classes.margin_div}></div>
