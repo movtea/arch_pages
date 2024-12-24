@@ -74,6 +74,10 @@ a {
 	text-decoration: none;
 }
 
+.wrap {
+	white-space: normal;
+}
+
 /* a:hover {
 	text-decoration: double;
 } */

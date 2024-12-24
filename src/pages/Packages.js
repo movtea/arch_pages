@@ -14,7 +14,7 @@ function Packages() {
 						<a href='#'>Next &gt;</a>
 					</span>
 				</div>
-				<table>
+				<table className='table'>
 					<thead>
 						<tr>
 							<th>
@@ -64,7 +64,7 @@ function Packages() {
 
 							<td>a26-18</td>
 
-							<td class='wrap'>
+							<td className={classes.wrap}>
 								Cross-platform, 3D and historically-based real-time strategy
 								game
 							</td>
@@ -83,7 +83,7 @@ function Packages() {
 
 							<td>a26-2</td>
 
-							<td class='wrap'>
+							<td className={classes.wrap}>
 								Cross-platform, 3D and historically-based real-time strategy
 								game (data files)
 							</td>
@@ -102,7 +102,7 @@ function Packages() {
 
 							<td>3.1.1-2</td>
 
-							<td class='wrap'>389 Directory Server (base)</td>
+							<td className={classes.wrap}>389 Directory Server (base)</td>
 							<td>Dec. 22, 2024</td>
 							<td></td>
 						</tr>
@@ -118,7 +118,7 @@ function Packages() {
 
 							<td>0.3.2-1</td>
 
-							<td class='wrap'>
+							<td className={classes.wrap}>
 								Manage Linux kernel initramfs cpio files written in Rust
 							</td>
 							<td>Aug. 20, 2024</td>
@@ -135,7 +135,7 @@ function Packages() {
 
 							<td>0.3.2-1</td>
 
-							<td class='wrap'>
+							<td className={classes.wrap}>
 								Manage Linux kernel initramfs cpio files written in Rust
 							</td>
 							<td>Aug. 20, 2024</td>
@@ -152,7 +152,7 @@ function Packages() {
 
 							<td>0.3.2-1</td>
 
-							<td class='wrap'>
+							<td className={classes.wrap}>
 								Manage Linux kernel initramfs cpio files written in Rust
 							</td>
 							<td>Aug. 20, 2024</td>
@@ -169,7 +169,7 @@ function Packages() {
 
 							<td>0.3.2-1</td>
 
-							<td class='wrap'>
+							<td className={classes.wrap}>
 								Manage Linux kernel initramfs cpio files written in Rust
 							</td>
 							<td>Aug. 20, 2024</td>
@@ -186,7 +186,7 @@ function Packages() {
 
 							<td>0.3.2-1</td>
 
-							<td class='wrap'>
+							<td className={classes.wrap}>
 								Manage Linux kernel initramfs cpio files written in Rust
 							</td>
 							<td>Aug. 20, 2024</td>

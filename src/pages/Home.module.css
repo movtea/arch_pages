@@ -1,282 +1,283 @@
 .margin_div {
-    margin: 1.5em 0;
+	margin: 1.5em 0;
 }
 
 a {
-    color: #08c;
+	color: #08c;
 }
 
-a:hover, 
-a:focus, 
+a:hover,
+a:focus,
 a:visited:hover {
-    color: red;
-    text-decoration: underline;
+	color: red;
+	text-decoration: underline;
 }
 
 .home__container {
-    width: 1602.65px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 /* Левая часть */
 .home__left {
-    width: 1262.65px;
+	padding: 3px 30px;
+	/* width: 1262.65px; */
 }
 
 /* Блок дистрибутива */
 .home__left .dist {
-    text-align: left;
-    margin-bottom: 1.5em;
-    padding: .65em;
-    background: #ecf2f5;
-    border: 1px solid #bcd;
+	text-align: left;
+	margin-bottom: 1.5em;
+	padding: 0.65em;
+	background: #ecf2f5;
+	border: 1px solid #bcd;
 }
 
 .dist h2 {
-    margin-bottom: .5em;
-    border-bottom: 1px solid #888;
+	margin-bottom: 0.5em;
+	border-bottom: 1px solid #888;
 }
 
 .dist h2 span {
-    font-size: 1.2em;
-    animation: infinite 4s;
-    animation-name: slide;
-}   
+	font-size: 1.2em;
+	animation: infinite 4s;
+	animation-name: slide;
+}
 
 @keyframes slide {
-    0% {
-        width: 100%;
-        margin-left: 0;
-    }
+	0% {
+		width: 100%;
+		margin-left: 0;
+	}
 
-    50% {
-        width: 150%;
-        margin-left: 15px;
-    }
+	50% {
+		width: 150%;
+		margin-left: 15px;
+	}
 
-    100% {
-        width: 100%;
-        margin-left: 0;
-    } 
+	100% {
+		width: 100%;
+		margin-left: 0;
+	}
 }
 
 .dist p {
-    margin: .33em 0 1em;
-    font-size: .812em;
+	margin: 0.33em 0 1em;
+	font-size: 0.812em;
 }
 
 .dist .p_more {
-    text-align: right;
+	text-align: right;
 }
 
 .dist a {
-    font-size: .9em;
+	font-size: 0.9em;
 }
 
 /* Блок новостей */
 .home__left .news {
-    text-align: left;
+	text-align: left;
 }
 
 .news h3 {
-    display: block;
-    height: 25px;
-    background: #1794D1;
-    font-size: 15px;
-    color: white;
-    float: left;
-    font-size: 1em;
-    margin-top: .5em;
-    margin-bottom: 15px;
+	display: block;
+	height: 25px;
+	background: #1794d1;
+	font-size: 15px;
+	color: white;
+	float: left;
+	font-size: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 15px;
 }
 
 .news h3 a:hover {
-    color: white;
+	color: white;
 }
 .news h3 a {
-    display: block;
-    font-size: 15px;
-    padding: 2px 10px;
-    color: white;
+	display: block;
+	font-size: 15px;
+	padding: 2px 10px;
+	color: white;
 }
 
 .news h3 .arrow {
-    margin-top: 20px;
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #1794D1;
-    margin: 0 auto;
-    font-size: 0;
-    line-height: 0;
+	margin-top: 20px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #1794d1;
+	margin: 0 auto;
+	font-size: 0;
+	line-height: 0;
 }
 
 .news h4 {
-    clear: both;
-    font-size: 1em;
-    margin-top: 1.5em;
-    border-bottom: 1px dotted #bbb;
-    font-size: .812em;
+	clear: both;
+	font-size: 1em;
+	margin-top: 1.5em;
+	border-bottom: 1px dotted #bbb;
+	font-size: 0.812em;
 }
 
 .news h4 a:hover {
-    animation: 1.5s 1;
-    animation-name: scale;
-    display: block;
+	animation: 1.5s 1;
+	animation-name: scale;
+	display: block;
 }
 
 @keyframes scale {
-    0% {
-    }
+	0% {
+	}
 
-    50% {
-        transform: scale(1.01); 
-    }
+	50% {
+		transform: scale(1.01);
+	}
 
-    100% {
-
-    }
+	100% {
+	}
 }
 
 .news p {
-    margin: .33em 0 1em;
-    margin-bottom: .5em;
-    font-size: .812em;
+	margin: 0.33em 0 1em;
+	margin-bottom: 0.5em;
+	font-size: 0.812em;
 }
 
-.news  ul {
-    margin-bottom: 1em;
-    padding-left: 2em;
-    font-size: .812em;
+.news ul {
+	margin-bottom: 1em;
+	padding-left: 2em;
+	font-size: 0.812em;
 }
 
 .news code {
-    font-family: monospace,monospace;
-    background: #ffd;
-    padding: .15em .25em;
+	font-family: monospace, monospace;
+	background: #ffd;
+	padding: 0.15em 0.25em;
 }
 
 .news pre {
-    font-family: monospace,monospace;
-    border: 1px solid #bdb;
-    background: #dfd;
-    padding: .5em;
-    margin: 1em;
+	font-family: monospace, monospace;
+	border: 1px solid #bdb;
+	background: #dfd;
+	padding: 0.5em;
+	margin: 1em;
 }
 
 .news pre code {
-    display: block;
-    background: none;
-    overflow: auto;
-    font-family: monospace,monospace;
-    padding: .15em .25em;
-    line-height: 1.4;
-    font-size: .812em;
+	display: block;
+	background: none;
+	overflow: auto;
+	font-family: monospace, monospace;
+	padding: 0.15em 0.25em;
+	line-height: 1.4;
+	font-size: 0.812em;
 }
 
 .news .time {
-    float: right;
-    font-size: .812em;
-    margin: -1.8em .5em 0 0;
+	float: right;
+	font-size: 0.812em;
+	margin: -1.8em 0.5em 0 0;
 }
 
 .news dl {
-    clear: both;
+	clear: both;
 }
 
 .news dl dt {
-    padding-top: 10px;
-    color: #333;
-    float: left;
-    padding-right: 15px;
-    font-size: .812em;
-    font-weight: 700;
+	padding-top: 10px;
+	color: #333;
+	float: left;
+	padding-right: 15px;
+	font-size: 0.812em;
+	font-weight: 700;
 }
 
 .news dl dd {
-    margin-bottom: 4px;
-    padding: 8px 0 4px;
-    font-weight: bold;
-    border-top: 1px dotted #bbb;
-    font-weight: 700;
-    font-size: .812em;
+	margin-bottom: 4px;
+	padding: 8px 0 4px;
+	font-weight: bold;
+	border-top: 1px dotted #bbb;
+	font-weight: 700;
+	font-size: 0.812em;
 }
 
 /* Правая */
 
 .home__right {
-    width: 300px;
+	padding: 3px 30px;
+	/* width: 300px; */
 }
 
 .search {
-    padding: 1em .75em;
-    background: #3ad;
-    color: #fff;
-    border: 1px solid #08b;
+	padding: 1em 0.75em;
+	background: #3ad;
+	color: #fff;
+	border: 1px solid #08b;
 }
 
 .search .search__label {
-    color: white;
-    width: auto;
-    padding: .1em 0;
-    vertical-align: top;
-    display: inline-block;
-    font-weight: bold;
+	color: white;
+	width: auto;
+	padding: 0.1em 0;
+	vertical-align: top;
+	display: inline-block;
+	font-weight: bold;
 }
 
 .search .search__input {
-    padding: .10em;
-    width: 10em;
-    float: right;
-    font-size: 1em;
-    color: #000;
-    background: #fff;
-    border: 1px solid #09c;
+	padding: 0.1em;
+	/* width: 10em; */
+	/* float: right; */
+	font-size: 0.85em;
+	width: 100%;
+	color: #000;
+	background: #fff;
+	border: 1px solid #09c;
 }
 
 .update {
-    padding: .65em;
-    background: #ecf2f5;
-    border: 1px solid #bcd;
+	padding: 0.65em;
+	background: #ecf2f5;
+	border: 1px solid #bcd;
 }
 
 .update h3 {
-    font-size: 1em;
-    text-align: left;
+	font-size: 1em;
+	text-align: left;
 }
 
 .update h3 span {
-    font-size: 0.812em;
+	font-size: 0.812em;
 }
 
 .update table tr td span {
-    white-space: normal;
-    font-size: 1.15em;
+	white-space: normal;
+	font-size: 1.15em;
 }
 
 .widget ul {
-    text-align: left;
-    list-style: none;
-    margin: .5em 0 .5em 1em;
-    padding: 0;
-    font-size: .812em;
+	text-align: left;
+	list-style: none;
+	margin: 0.5em 0 0.5em 1em;
+	padding: 0;
+	font-size: 0.812em;
 }
 
 .widget h4 {
-    text-align: left;
-    font-size: 0.9em;
-    font-weight: bold;
+	text-align: left;
+	font-size: 0.9em;
+	font-weight: bold;
 }
 
 footer p {
-    margin: 0;
-    font-size: .7em;
+	margin: 0;
+	font-size: 0.7em;
 }
 
 .home__right .img {
-    width: 210px;
+	width: 210px;
 }
