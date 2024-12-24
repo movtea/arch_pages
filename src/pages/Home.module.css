@@ -35,9 +35,31 @@ a:visited:hover {
 }
 
 .dist h2 {
-    font-size: 1.2em;
     margin-bottom: .5em;
     border-bottom: 1px solid #888;
+}
+
+.dist h2 span {
+    font-size: 1.2em;
+    animation: infinite 4s;
+    animation-name: slide;
+}   
+
+@keyframes slide {
+    0% {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    50% {
+        width: 150%;
+        margin-left: 15px;
+    }
+
+    100% {
+        width: 100%;
+        margin-left: 0;
+    } 
 }
 
 .dist p {
@@ -99,6 +121,25 @@ a:visited:hover {
     margin-top: 1.5em;
     border-bottom: 1px dotted #bbb;
     font-size: .812em;
+}
+
+.news h4 a:hover {
+    animation: 1.5s 1;
+    animation-name: scale;
+    display: block;
+}
+
+@keyframes scale {
+    0% {
+    }
+
+    50% {
+        transform: scale(1.01); 
+    }
+
+    100% {
+
+    }
 }
 
 .news p {
