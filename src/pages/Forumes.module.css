@@ -1,21 +1,132 @@
 .reg__cont {
-    background: #f6f9fc;
-    padding: 30px 40px;
+	background: #f6f9fc;
+	padding: 30px 40px;
 }
 
 .norm {
-    border: 0;
-    font-style: normal;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
 }
 
 .norm .reg {
-    border: 1px #bcd solid;
-    border-radius: 0;
+	border: 1px #bcd solid;
+	border-radius: 0;
+	padding: 10px;
 }
 
 .regHead {
-    background-color: red;
+	padding: 18px 0px;
+	margin-bottom: 6px;
+	height: 40%;
+}
+
+.regHeadLink {
+	display: flex;
+	flex-direction: row;
+	padding-left: 0rem;
+}
+.regHead ul {
+	margin-bottom: 0rem;
+}
+
+.con_div {
+	padding: 10px 0;
+}
+
+.regHeadLink li {
+	padding-right: 1.5em;
+	font-size: 0.8em;
+	list-style: none;
+}
+
+.conl {
+	float: left;
+	text-align: right;
+	color: #566579;
+}
+
+.conr {
+	float: right;
+}
+
+.conr span {
+	color: #566579;
+}
+
+.regBody {
+	border-style: solid none;
+	border-width: 2px 0;
+	margin-bottom: 12px;
+	padding: 12px 0px;
+	text-align: start;
+}
+
+.regBody h2 {
+	color: #566579;
+	text-align: start;
+	font-weight: normal;
+}
+
+.regBody form {
+	background-color: #ebf1f5;
+	padding: 10px 20px;
+}
+
+.regBody span {
+	color: #444;
+	font-weight: bold;
+	padding: 10px 19px 4px 19px;
+	font-size: 0.8em;
+}
+
+.info {
+	background-color: white;
+	color: #566579;
+	text-align: left;
+	font-size: 1em;
+	padding: 10px;
+}
+
+.info h3 {
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+.info p {
+	padding: 7px 0;
+	margin: 0px;
+}
+
+.inDiv {
+	background: #f6f9fc;
+	border-color: #dfe6ee;
+	border-style: solid;
+	border-width: 1px;
+	padding: 12px 18px;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+	color: #566579;
+}
+
+.inDiv strong {
+	font-weight: normal;
+	padding-right: 14px;
+	white-space: pre;
+	display: block;
+	line-height: normal;
+	font-size: 0.8em;
+}
+
+.inDiv p {
+	margin: 2px;
+}
+.inDiv input {
+	margin-bottom: 6px;
+}
+
+.required {
 }
