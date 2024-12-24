@@ -58,7 +58,7 @@ function Home() {
                         <p>This change should help address performance, crash or start-up issues for a number of memory intensive applications, particularly for (but not limited to) <a href="a">some Windows games</a> played through Wine/Steam Proton. Overall, end users should have a smoother experience out of the box with no expressed concerns about potential downsides in <a href="#">the related proposal on arch-dev-public mailing list.</a></p>
                         <p>This <code>vm.max_map_count</code> increase is introduced in the <code>2024.04.07-1</code> release of the <a href="#">filesystem package</a> and will be effective right after the upgrade.</p>
                         <p>Before upgrading, in case you are already …</p>
-
+                        <div className={classes.margin_div}></div>
                         <h3><a href="#">Older news</a> <span className={classes.arrow}></span></h3> 
 
                         <dl>

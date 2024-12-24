@@ -2,7 +2,7 @@
   "name": "react-arch",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://movtea.github.io/arch_pages",
+  "homepage": "http://movtea.github.io/arch_pages/",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",

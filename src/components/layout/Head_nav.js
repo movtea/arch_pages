@@ -12,13 +12,13 @@ function Head_nav() {
         <nav></nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/arch_pages/">Home</Link>
             </li>
             <li>
-              <Link to="/packages">Packages</Link>
+              <Link to="/arch_pages/packages">Packages</Link>
             </li>
             <li>
-              <Link to="/forumes">Forume</Link>
+              <Link to="/arch_pages/forumes">Forume</Link>
             </li>
           </ul> 
         </div>

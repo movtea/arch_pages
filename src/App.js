@@ -14,11 +14,11 @@ return (
     <div>
       <Head_nav/>
       <Routes>
-        <Route path="/" element={<Home/>}>
+        <Route path="/arch_pages/" element={<Home/>}>
         </Route>
-        <Route path="/packages" element={<Packages/>}>
+        <Route path="/arch_pages/packages" element={<Packages/>}>
         </Route>
-        <Route path="/forumes" element={<Forumes/>}>
+        <Route path="/arch_pages/forumes" element={<Forumes/>}>
         </Route>
       </Routes>
     </div>

@@ -8,27 +8,15 @@ a {
 
 a:hover, 
 a:focus, 
-a:visited, 
 a:visited:hover {
-    color: #08c;
+    color: red;
     text-decoration: underline;
-}
-
-a:link, 
-a:visited, 
-a:visited {
-    color: #08c;
-}
-
-a {
-    text-decoration: none;
 }
 
 .home__container {
     width: 1602.65px;
     margin: 0 auto;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
 }
 
@@ -80,7 +68,6 @@ a {
     font-size: 1em;
     margin-top: .5em;
     margin-bottom: 15px;
-    line-height: 1.4;
 }
 
 .news h3 a:hover {
@@ -182,8 +169,6 @@ a {
 
 .home__right {
     width: 300px;
-    /* display: flex; */
-    /* flex-direction: column; */
 }
 
 .search {
