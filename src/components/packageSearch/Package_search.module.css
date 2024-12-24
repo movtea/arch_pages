@@ -30,3 +30,11 @@ label {
 	font-size: 0.85em;
 	width: 100%;
 }
+
+.err {
+	background-color: #747474;
+	color: white;
+	font-size: 10px;
+	border-radius: 0% 0% 6px 6px;
+	padding: auto 0;
+}

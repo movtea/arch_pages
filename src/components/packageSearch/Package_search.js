@@ -12,7 +12,7 @@ function outputData() {
 			`Arch: ${document.getElementById('id_arch').value}\n Repository:${
 				document.getElementById('id_repo').value
 			}\n Keywords: ${document.getElementById('id_q').value}\n Maintainer: ${
-				document.getElementById('id_q').value
+				document.getElementById('id_main').value
 			}\n Flagged: ${document.getElementById('id_flagged').value}`
 		)
 	} else {
@@ -25,9 +25,11 @@ function checkArch() {
 
 	if (val) {
 		document.getElementById('id_arch').style.boxShadow = '10px 0px 0px green'
+		document.getElementById('id_arch_err').textContent = ''
 		return true
 	} else {
 		document.getElementById('id_arch').style.boxShadow = '10px 0px 0px red'
+		document.getElementById('id_arch_err').textContent = 'Выберете элемент'
 		return false
 	}
 }
@@ -37,9 +39,11 @@ function checkRepo() {
 
 	if (val) {
 		document.getElementById('id_repo').style.boxShadow = '10px 0px 0px green'
+		document.getElementById('id_repo_err').textContent = ''
 		return true
 	} else {
 		document.getElementById('id_repo').style.boxShadow = '10px 0px 0px red'
+		document.getElementById('id_repo_err').textContent = 'Выберете элемент'
 		return false
 	}
 }
@@ -50,9 +54,12 @@ function checkQ() {
 
 	if (regex.test(val)) {
 		document.getElementById('id_q').style.boxShadow = '10px 0px 0px green'
+		document.getElementById('id_q_err').textContent = ''
 		return true
 	} else {
 		document.getElementById('id_q').style.boxShadow = '10px 0px 0px red'
+		document.getElementById('id_q_err').textContent =
+			'Длинна значения от 2 до 15 символов. Только латиница.'
 		return false
 	}
 }
@@ -62,9 +69,11 @@ function checkMain() {
 
 	if (val) {
 		document.getElementById('id_main').style.boxShadow = '10px 0px 0px green'
+		document.getElementById('id_main_err').textContent = ''
 		return true
 	} else {
 		document.getElementById('id_main').style.boxShadow = '10px 0px 0px red'
+		document.getElementById('id_main_err').textContent = 'Выберете элемент'
 		return false
 	}
 }
@@ -74,9 +83,11 @@ function checkFlagged() {
 
 	if (val) {
 		document.getElementById('id_flagged').style.boxShadow = '10px 0px 0px green'
+		document.getElementById('id_flagged_err').textContent = ''
 		return true
 	} else {
 		document.getElementById('id_flagged').style.boxShadow = '10px 0px 0px red'
+		document.getElementById('id_flagged_err').textContent = 'Выберете элемент'
 		return false
 	}
 }
@@ -98,6 +109,7 @@ function Package_search() {
 							<option value='any'>any</option>
 							<option value='x86_64'>x86_64</option>
 						</select>
+						<label id='id_arch_err' className={classes.err}></label>
 					</div>
 					<div className='col-md-1 ${classes.filter_div}'>
 						<label>Repository</label>
@@ -112,6 +124,7 @@ function Package_search() {
 							<option value='Gnome-Unstable'>Gnome-Unstable</option>
 							<option value='KDE-Unstable'>KDE-Unstable</option>
 						</select>
+						<label id='id_repo_err' className={classes.err}></label>
 					</div>
 					<div className='col-md-2 ${classes.filter_div}'>
 						<label>Keywords</label>
@@ -122,6 +135,7 @@ function Package_search() {
 							className={classes.filter_section}
 							onBlur={checkQ}
 						/>
+						<label id='id_q_err' className={classes.err}></label>
 					</div>
 					<div className='col-md-2 ${classes.filter_div}'>
 						<label>Maintainer</label>
@@ -135,6 +149,7 @@ function Package_search() {
 							<option value='alex19EP'>Alexander Epaneshnikov</option>
 							<option value='arodseth'>Alexander Rødseth</option>
 						</select>
+						<label id='id_main_err' className={classes.err}></label>
 					</div>
 					<div className='col-md-1 ${classes.filter_div}'>
 						<label>Flagged</label>
@@ -147,6 +162,7 @@ function Package_search() {
 							<option value='Flagged'>Flagged</option>
 							<option value='Not Flagged'>Not Flagged</option>
 						</select>
+						<label id='id_flagged_err' className={classes.err}></label>
 					</div>
 					<div className='col-md-1 ${classes.filter_div}'>
 						<button onClick={outputData}>Search</button>
