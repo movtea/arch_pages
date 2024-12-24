@@ -1,6 +1,59 @@
 import React from 'react'
 import classes from './Forumes.module.css'
 
+function outputData() {
+	document
+		.getElementsByTagName('form')[0]
+		.addEventListener('submit', function (event) {
+			event.preventDefault()
+		})
+	if (checkName() && checkEmail() && checkPass()) {
+		alert('ОК')
+	} else {
+		alert('Ошибка заполнения данных')
+	}
+}
+
+function checkName() {
+	var name = document.getElementById('name').value
+	var regex = /^[a-zA-Z\s]{2,15}$/
+
+	if (regex.test(name)) {
+		document.getElementById('name').style.boxShadow = '10px 0px 0px green'
+		return true
+	} else {
+		document.getElementById('name').style.boxShadow = '10px 0px 0px red'
+		return false
+	}
+}
+
+function checkEmail() {
+	var email = document.getElementById('email').value
+	var regex =
+		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+	if (regex.test(email)) {
+		document.getElementById('email').style.boxShadow = '10px 0px 0px green'
+		return true
+	} else {
+		document.getElementById('email').style.boxShadow = '10px 0px 0px red'
+		return false
+	}
+}
+
+function checkPass() {
+	var email = document.getElementById('pass').value
+	var regex = /^[a-zA-Z\s]{6,20}$/
+
+	if (regex.test(email)) {
+		document.getElementById('pass').style.boxShadow = '10px 0px 0px green'
+		return true
+	} else {
+		document.getElementById('pass').style.boxShadow = '10px 0px 0px red'
+		return false
+	}
+}
+
 function Forumes() {
 	return (
 		<>
@@ -76,6 +129,8 @@ function Forumes() {
 										name='req_user'
 										size='25'
 										maxLength='25'
+										id='name'
+										onBlur={checkName}
 									></input>
 								</div>
 								<span>Enter and confirm a valid email address</span>
@@ -86,17 +141,23 @@ function Forumes() {
 									</p>
 									<strong>Email</strong>
 									<input
-										type='text'
-										name='req_email'
+										type='email'
 										size='50'
+										id='email'
+										className={classes.emailInput}
 										maxLength='80'
+										onBlur={checkEmail}
 									></input>
-									<strong>Confirm email address </strong>
+								</div>
+								<span>Enter and confirm a valid password</span>
+								<div className={classes.inDiv}>
+									<strong>Password</strong>
 									<input
-										type='text'
-										name='req_email2'
+										type='password'
 										size='50'
+										id='pass'
 										maxLength='80'
+										onBlur={checkPass}
 									></input>
 								</div>
 								<span>Set your privacy options</span>
@@ -108,7 +169,12 @@ function Forumes() {
 									</p>
 									<br></br>
 									<p>
-										<input type='radio' name='email_setting' value='0'></input>
+										<input
+											type='radio'
+											name='email_setting'
+											defaultChecked={true}
+											value='0'
+										></input>
 										Display your email address to other users.
 									</p>
 									<br></br>
@@ -121,6 +187,9 @@ function Forumes() {
 										<input type='radio' name='email_setting' value='2'></input>
 										Hide your email address and disallow form email.
 									</p>
+								</div>
+								<div className={classes.inDiv}>
+									<button onClick={outputData}>Send</button>
 								</div>
 							</form>
 						</div>

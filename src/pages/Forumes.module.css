@@ -128,5 +128,10 @@
 	margin-bottom: 6px;
 }
 
-.required {
+.emailInput:valid {
+	box-shadow: 10px 0px 0px green;
+}
+
+.emailInput:invalid {
+	box-shadow: 10px 0px 0px red;
 }
